@@ -29,7 +29,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor redColor];
+        self.backgroundColor = [UIColor whiteColor];
       
         self.playButton = [[UIButton alloc]initWithFrame:CGRectMake(0, -10, frame.size.height+20, frame.size.height+20)];
         self.playButton.centerX = KScreenWidth/2.0;

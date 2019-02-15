@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "WebViewController.h"
-#import "MP4PlayerViewController.h"
 #import "HomeViewController.h"
 
 @interface AppDelegate ()
@@ -22,9 +21,7 @@
     HomeViewController *homeVc = [[HomeViewController alloc]init];
 
 //    WebViewController *webViewController = [[WebViewController alloc]init];
-//    [webViewController webViewLoadURL:@"http://m.iqiyi.com/"];
-//    MP4PlayerViewController *vc = [MP4PlayerViewController new];
-    
+//    [webViewController webViewLoadURL:@"http://m.iqiyi.com/"];    
     UINavigationController *nav =[[UINavigationController alloc]initWithRootViewController:homeVc];
     
 //    [nav pushViewController:webViewController animated:NO];

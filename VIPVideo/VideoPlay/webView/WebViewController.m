@@ -11,13 +11,11 @@
 #import <UIView+CHFrame.h>
 #import "WebActionView.h"
 #import "ServerManager.h"
-#import "PreLoadWebView.h"
 
 @interface WebViewController ()<WKNavigationDelegate,WKUIDelegate>
 @property (nonatomic ,strong) MBProgressHUD *progressHUD;
 @property (nonatomic ,strong) WebActionView *actionContentView;
 @property (nonatomic,copy) void(^completion)(NSString *html);
-@property (nonatomic,strong) PreLoadWebView *preloadWebView;
 
 @end
 
@@ -93,9 +91,9 @@
 }
 // 页面加载失败时调用
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error {
-//    [self.progressView setProgress:0.0f animated:NO];
+    self.progressHUD.label.text = @"发生错误";
     NSLog(@"didFailProvisionalNavigation %@",error);
-    [self.progressHUD hideAnimated:YES];
+    [self.progressHUD hideAnimated:YES afterDelay:2];
 
 }
 // 当内容开始返回时调用
@@ -124,18 +122,8 @@
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
     NSString * urlStr = navigationResponse.response.URL.absoluteString;
     NSLog(@"当前跳转地址-：%@",urlStr);
-//    __weak typeof(self) weakself = self;
-//    if ([urlStr containsString:@"vip_all/index.php"]) {
-//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//            weakself.completion(urlStr);
-//        });
-//    }
-//    [[NSUserDefaults standardUserDefaults] setObject:urlStr forKey:@"iqiyiURL"];
-//    [[NSUserDefaults standardUserDefaults] synchronize];
     //允许跳转
        decisionHandler(WKNavigationResponsePolicyAllow);
-    //不允许跳转
-    //decisionHandler(WKNavigationResponsePolicyCancel);
 }
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
 {
@@ -163,16 +151,6 @@
         webViewController.founded = YES;
         [webViewController webViewLoadURL:newURL];
         [weakself.navigationController pushViewController:webViewController animated:YES];
-        
-//        weakself.preloadWebView = [PreLoadWebView createLoadWebViewWithURL:newURL removeAD:^(NSString * _Nonnull playerURL) {
-//            WebViewController *webViewController = [[WebViewController alloc]init];
-//            webViewController.founded = YES;
-//            [webViewController webViewLoadURL:playerURL completion:^(NSString * _Nonnull html) {
-//                NSLog(@"html.....=%@",html);
-//            }];
-//            [weakself.navigationController pushViewController:webViewController animated:YES];
-//        }];
-//        weakself.preloadWebView.frame = CGRectMake(0, 0, 300, 300);
     };
     self.actionContentView.reloadAction = ^{
         [weakself.webView reload];

@@ -10,20 +10,14 @@
 		4DB96A43579414933B00B7AD /* libPods-VIPVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9EE3AE5E075A798E535DC7 /* libPods-VIPVideo.a */; };
 		95914196220E6EE500B456C9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95914195220E6EE500B456C9 /* WebKit.framework */; };
 		959141BE221002EC00B456C9 /* WebActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 959141BD221002EC00B456C9 /* WebActionView.m */; };
-		959141C12211C67A00B456C9 /* PreLoadWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 959141C02211C67A00B456C9 /* PreLoadWebView.m */; };
 		959141C42215388000B456C9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959141C32215388000B456C9 /* HomeViewController.m */; };
 		959141C82215A3E100B456C9 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 959141C72215A3E100B456C9 /* VideoModel.m */; };
 		959141CB2215ADE700B456C9 /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 959141CA2215ADE700B456C9 /* HomeCollectionViewCell.m */; };
 		959141CE2215BDE200B456C9 /* ServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 959141CD2215BDE200B456C9 /* ServerManager.m */; };
 		959298D8220B1F83005A0B2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 959298D7220B1F83005A0B2E /* AppDelegate.m */; };
-		959298DB220B1F83005A0B2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959298DA220B1F83005A0B2E /* ViewController.m */; };
 		959298E0220B1F84005A0B2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959298DF220B1F84005A0B2E /* Assets.xcassets */; };
 		959298E3220B1F84005A0B2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959298E1220B1F84005A0B2E /* LaunchScreen.storyboard */; };
 		959298E6220B1F84005A0B2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 959298E5220B1F84005A0B2E /* main.m */; };
-		959298F0220B1FDA005A0B2E /* VideoInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 959298EF220B1FDA005A0B2E /* VideoInteractor.m */; };
-		959298F6220C6A92005A0B2E /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 959298F5220C6A92005A0B2E /* PlayerView.m */; };
-		959298FA220C6AF0005A0B2E /* VideoPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 959298F9220C6AF0005A0B2E /* VideoPresenter.m */; };
-		959298FE220C6CF6005A0B2E /* MP4PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959298FD220C6CF6005A0B2E /* MP4PlayerViewController.m */; };
 		95929902220DC390005A0B2E /* PlayerActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95929901220DC390005A0B2E /* PlayerActionView.m */; };
 		95929904220DC571005A0B2E /* PlayerImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95929903220DC571005A0B2E /* PlayerImages.xcassets */; };
 		95929908220DC8A1005A0B2E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95929907220DC8A1005A0B2E /* WebViewController.m */; };
@@ -35,8 +29,6 @@
 		95914195220E6EE500B456C9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		959141BC221002EC00B456C9 /* WebActionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebActionView.h; sourceTree = "<group>"; };
 		959141BD221002EC00B456C9 /* WebActionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebActionView.m; sourceTree = "<group>"; };
-		959141BF2211C67A00B456C9 /* PreLoadWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreLoadWebView.h; sourceTree = "<group>"; };
-		959141C02211C67A00B456C9 /* PreLoadWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreLoadWebView.m; sourceTree = "<group>"; };
 		959141C22215388000B456C9 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		959141C32215388000B456C9 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		959141C62215A3E100B456C9 /* VideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
@@ -48,23 +40,10 @@
 		959298D3220B1F83005A0B2E /* VIPVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		959298D6220B1F83005A0B2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		959298D7220B1F83005A0B2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		959298D9220B1F83005A0B2E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		959298DA220B1F83005A0B2E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		959298DF220B1F84005A0B2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		959298E2220B1F84005A0B2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		959298E4220B1F84005A0B2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		959298E5220B1F84005A0B2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		959298EE220B1FDA005A0B2E /* VideoInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoInteractor.h; sourceTree = "<group>"; };
-		959298EF220B1FDA005A0B2E /* VideoInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoInteractor.m; sourceTree = "<group>"; };
-		959298F2220B202A005A0B2E /* VideoInteractorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoInteractorProtocol.h; sourceTree = "<group>"; };
-		959298F4220C6A92005A0B2E /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
-		959298F5220C6A92005A0B2E /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
-		959298F8220C6AF0005A0B2E /* VideoPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPresenter.h; sourceTree = "<group>"; };
-		959298F9220C6AF0005A0B2E /* VideoPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPresenter.m; sourceTree = "<group>"; };
-		959298FB220C6AFD005A0B2E /* VideoPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPresenterProtocol.h; sourceTree = "<group>"; };
-		959298FC220C6CF6005A0B2E /* MP4PlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MP4PlayerViewController.h; sourceTree = "<group>"; };
-		959298FD220C6CF6005A0B2E /* MP4PlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MP4PlayerViewController.m; sourceTree = "<group>"; };
-		959298FF220C6EEB005A0B2E /* VideoPlayerVCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayerVCProtocol.h; sourceTree = "<group>"; };
 		95929900220DC390005A0B2E /* PlayerActionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerActionView.h; sourceTree = "<group>"; };
 		95929901220DC390005A0B2E /* PlayerActionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerActionView.m; sourceTree = "<group>"; };
 		95929903220DC571005A0B2E /* PlayerImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PlayerImages.xcassets; sourceTree = "<group>"; };
@@ -127,8 +106,6 @@
 			children = (
 				959298D6220B1F83005A0B2E /* AppDelegate.h */,
 				959298D7220B1F83005A0B2E /* AppDelegate.m */,
-				959298D9220B1F83005A0B2E /* ViewController.h */,
-				959298DA220B1F83005A0B2E /* ViewController.m */,
 				959298DF220B1F84005A0B2E /* Assets.xcassets */,
 				959298E1220B1F84005A0B2E /* LaunchScreen.storyboard */,
 				959298E4220B1F84005A0B2E /* Info.plist */,
@@ -142,9 +119,7 @@
 			children = (
 				959141C52215A3D300B456C9 /* Model */,
 				95929905220DC87E005A0B2E /* webView */,
-				959298F7220C6ADC005A0B2E /* Presenter */,
 				959298F3220C6A6F005A0B2E /* View */,
-				959298F1220B1FE0005A0B2E /* Interactor */,
 				95929903220DC571005A0B2E /* PlayerImages.xcassets */,
 				959141CC2215BDE200B456C9 /* ServerManager.h */,
 				959141CD2215BDE200B456C9 /* ServerManager.m */,
@@ -152,44 +127,17 @@
 			path = VideoPlay;
 			sourceTree = "<group>";
 		};
-		959298F1220B1FE0005A0B2E /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				959298EE220B1FDA005A0B2E /* VideoInteractor.h */,
-				959298EF220B1FDA005A0B2E /* VideoInteractor.m */,
-				959298F2220B202A005A0B2E /* VideoInteractorProtocol.h */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
 		959298F3220C6A6F005A0B2E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				959298F4220C6A92005A0B2E /* PlayerView.h */,
-				959298F5220C6A92005A0B2E /* PlayerView.m */,
 				95929900220DC390005A0B2E /* PlayerActionView.h */,
 				95929901220DC390005A0B2E /* PlayerActionView.m */,
-				959298FC220C6CF6005A0B2E /* MP4PlayerViewController.h */,
-				959298FD220C6CF6005A0B2E /* MP4PlayerViewController.m */,
-				959141BF2211C67A00B456C9 /* PreLoadWebView.h */,
-				959141C02211C67A00B456C9 /* PreLoadWebView.m */,
 				959141C22215388000B456C9 /* HomeViewController.h */,
 				959141C32215388000B456C9 /* HomeViewController.m */,
 				959141C92215ADE700B456C9 /* HomeCollectionViewCell.h */,
 				959141CA2215ADE700B456C9 /* HomeCollectionViewCell.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		959298F7220C6ADC005A0B2E /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				959298F8220C6AF0005A0B2E /* VideoPresenter.h */,
-				959298F9220C6AF0005A0B2E /* VideoPresenter.m */,
-				959298FB220C6AFD005A0B2E /* VideoPresenterProtocol.h */,
-				959298FF220C6EEB005A0B2E /* VideoPlayerVCProtocol.h */,
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		95929905220DC87E005A0B2E /* webView */ = {
@@ -315,18 +263,12 @@
 			files = (
 				959141CE2215BDE200B456C9 /* ServerManager.m in Sources */,
 				959141C82215A3E100B456C9 /* VideoModel.m in Sources */,
-				959298FE220C6CF6005A0B2E /* MP4PlayerViewController.m in Sources */,
-				959298DB220B1F83005A0B2E /* ViewController.m in Sources */,
 				959298E6220B1F84005A0B2E /* main.m in Sources */,
 				95929902220DC390005A0B2E /* PlayerActionView.m in Sources */,
 				95929908220DC8A1005A0B2E /* WebViewController.m in Sources */,
-				959298FA220C6AF0005A0B2E /* VideoPresenter.m in Sources */,
-				959141C12211C67A00B456C9 /* PreLoadWebView.m in Sources */,
-				959298F0220B1FDA005A0B2E /* VideoInteractor.m in Sources */,
 				959141BE221002EC00B456C9 /* WebActionView.m in Sources */,
 				959298D8220B1F83005A0B2E /* AppDelegate.m in Sources */,
 				959141CB2215ADE700B456C9 /* HomeCollectionViewCell.m in Sources */,
-				959298F6220C6A92005A0B2E /* PlayerView.m in Sources */,
 				959141C42215388000B456C9 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
