@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DB96A43579414933B00B7AD /* libPods-VIPVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9EE3AE5E075A798E535DC7 /* libPods-VIPVideo.a */; };
+		95914196220E6EE500B456C9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95914195220E6EE500B456C9 /* WebKit.framework */; };
+		959141BE221002EC00B456C9 /* WebActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 959141BD221002EC00B456C9 /* WebActionView.m */; };
+		959141C12211C67A00B456C9 /* PreLoadWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 959141C02211C67A00B456C9 /* PreLoadWebView.m */; };
+		959141C42215388000B456C9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959141C32215388000B456C9 /* HomeViewController.m */; };
+		959141C82215A3E100B456C9 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 959141C72215A3E100B456C9 /* VideoModel.m */; };
+		959141CB2215ADE700B456C9 /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 959141CA2215ADE700B456C9 /* HomeCollectionViewCell.m */; };
+		959141CE2215BDE200B456C9 /* ServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 959141CD2215BDE200B456C9 /* ServerManager.m */; };
+		959298D8220B1F83005A0B2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 959298D7220B1F83005A0B2E /* AppDelegate.m */; };
+		959298DB220B1F83005A0B2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959298DA220B1F83005A0B2E /* ViewController.m */; };
+		959298E0220B1F84005A0B2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959298DF220B1F84005A0B2E /* Assets.xcassets */; };
+		959298E3220B1F84005A0B2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959298E1220B1F84005A0B2E /* LaunchScreen.storyboard */; };
+		959298E6220B1F84005A0B2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 959298E5220B1F84005A0B2E /* main.m */; };
+		959298F0220B1FDA005A0B2E /* VideoInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 959298EF220B1FDA005A0B2E /* VideoInteractor.m */; };
+		959298F6220C6A92005A0B2E /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 959298F5220C6A92005A0B2E /* PlayerView.m */; };
+		959298FA220C6AF0005A0B2E /* VideoPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 959298F9220C6AF0005A0B2E /* VideoPresenter.m */; };
+		959298FE220C6CF6005A0B2E /* MP4PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959298FD220C6CF6005A0B2E /* MP4PlayerViewController.m */; };
+		95929902220DC390005A0B2E /* PlayerActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95929901220DC390005A0B2E /* PlayerActionView.m */; };
+		95929904220DC571005A0B2E /* PlayerImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95929903220DC571005A0B2E /* PlayerImages.xcassets */; };
+		95929908220DC8A1005A0B2E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95929907220DC8A1005A0B2E /* WebViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3353E22B343B234F558980AF /* Pods-VIPVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPVideo/Pods-VIPVideo.debug.xcconfig"; sourceTree = "<group>"; };
+		629B3D055031A231ABFD6058 /* Pods-VIPVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIPVideo/Pods-VIPVideo.release.xcconfig"; sourceTree = "<group>"; };
+		95914195220E6EE500B456C9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		959141BC221002EC00B456C9 /* WebActionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebActionView.h; sourceTree = "<group>"; };
+		959141BD221002EC00B456C9 /* WebActionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebActionView.m; sourceTree = "<group>"; };
+		959141BF2211C67A00B456C9 /* PreLoadWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreLoadWebView.h; sourceTree = "<group>"; };
+		959141C02211C67A00B456C9 /* PreLoadWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreLoadWebView.m; sourceTree = "<group>"; };
+		959141C22215388000B456C9 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		959141C32215388000B456C9 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		959141C62215A3E100B456C9 /* VideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		959141C72215A3E100B456C9 /* VideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
+		959141C92215ADE700B456C9 /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
+		959141CA2215ADE700B456C9 /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
+		959141CC2215BDE200B456C9 /* ServerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerManager.h; sourceTree = "<group>"; };
+		959141CD2215BDE200B456C9 /* ServerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerManager.m; sourceTree = "<group>"; };
+		959298D3220B1F83005A0B2E /* VIPVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		959298D6220B1F83005A0B2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		959298D7220B1F83005A0B2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		959298D9220B1F83005A0B2E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		959298DA220B1F83005A0B2E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		959298DF220B1F84005A0B2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		959298E2220B1F84005A0B2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		959298E4220B1F84005A0B2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		959298E5220B1F84005A0B2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		959298EE220B1FDA005A0B2E /* VideoInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoInteractor.h; sourceTree = "<group>"; };
+		959298EF220B1FDA005A0B2E /* VideoInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoInteractor.m; sourceTree = "<group>"; };
+		959298F2220B202A005A0B2E /* VideoInteractorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoInteractorProtocol.h; sourceTree = "<group>"; };
+		959298F4220C6A92005A0B2E /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		959298F5220C6A92005A0B2E /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		959298F8220C6AF0005A0B2E /* VideoPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPresenter.h; sourceTree = "<group>"; };
+		959298F9220C6AF0005A0B2E /* VideoPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPresenter.m; sourceTree = "<group>"; };
+		959298FB220C6AFD005A0B2E /* VideoPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPresenterProtocol.h; sourceTree = "<group>"; };
+		959298FC220C6CF6005A0B2E /* MP4PlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MP4PlayerViewController.h; sourceTree = "<group>"; };
+		959298FD220C6CF6005A0B2E /* MP4PlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MP4PlayerViewController.m; sourceTree = "<group>"; };
+		959298FF220C6EEB005A0B2E /* VideoPlayerVCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayerVCProtocol.h; sourceTree = "<group>"; };
+		95929900220DC390005A0B2E /* PlayerActionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerActionView.h; sourceTree = "<group>"; };
+		95929901220DC390005A0B2E /* PlayerActionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerActionView.m; sourceTree = "<group>"; };
+		95929903220DC571005A0B2E /* PlayerImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PlayerImages.xcassets; sourceTree = "<group>"; };
+		95929906220DC8A1005A0B2E /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		95929907220DC8A1005A0B2E /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		CB9EE3AE5E075A798E535DC7 /* libPods-VIPVideo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIPVideo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		959298D0220B1F83005A0B2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95914196220E6EE500B456C9 /* WebKit.framework in Frameworks */,
+				4DB96A43579414933B00B7AD /* libPods-VIPVideo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		959141C52215A3D300B456C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				959141C62215A3E100B456C9 /* VideoModel.h */,
+				959141C72215A3E100B456C9 /* VideoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		959298CA220B1F83005A0B2E = {
+			isa = PBXGroup;
+			children = (
+				959298D5220B1F83005A0B2E /* VIPVideo */,
+				959298D4220B1F83005A0B2E /* Products */,
+				FC04CA5013E9F6E2699AA6F1 /* Pods */,
+				E777737244BF57DEA58F65BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		959298D4220B1F83005A0B2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				959298D3220B1F83005A0B2E /* VIPVideo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		959298D5220B1F83005A0B2E /* VIPVideo */ = {
+			isa = PBXGroup;
+			children = (
+				959298ED220B1FA2005A0B2E /* VideoPlay */,
+				959298EC220B1F8E005A0B2E /* Application */,
+			);
+			path = VIPVideo;
+			sourceTree = "<group>";
+		};
+		959298EC220B1F8E005A0B2E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				959298D6220B1F83005A0B2E /* AppDelegate.h */,
+				959298D7220B1F83005A0B2E /* AppDelegate.m */,
+				959298D9220B1F83005A0B2E /* ViewController.h */,
+				959298DA220B1F83005A0B2E /* ViewController.m */,
+				959298DF220B1F84005A0B2E /* Assets.xcassets */,
+				959298E1220B1F84005A0B2E /* LaunchScreen.storyboard */,
+				959298E4220B1F84005A0B2E /* Info.plist */,
+				959298E5220B1F84005A0B2E /* main.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		959298ED220B1FA2005A0B2E /* VideoPlay */ = {
+			isa = PBXGroup;
+			children = (
+				959141C52215A3D300B456C9 /* Model */,
+				95929905220DC87E005A0B2E /* webView */,
+				959298F7220C6ADC005A0B2E /* Presenter */,
+				959298F3220C6A6F005A0B2E /* View */,
+				959298F1220B1FE0005A0B2E /* Interactor */,
+				95929903220DC571005A0B2E /* PlayerImages.xcassets */,
+				959141CC2215BDE200B456C9 /* ServerManager.h */,
+				959141CD2215BDE200B456C9 /* ServerManager.m */,
+			);
+			path = VideoPlay;
+			sourceTree = "<group>";
+		};
+		959298F1220B1FE0005A0B2E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				959298EE220B1FDA005A0B2E /* VideoInteractor.h */,
+				959298EF220B1FDA005A0B2E /* VideoInteractor.m */,
+				959298F2220B202A005A0B2E /* VideoInteractorProtocol.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		959298F3220C6A6F005A0B2E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				959298F4220C6A92005A0B2E /* PlayerView.h */,
+				959298F5220C6A92005A0B2E /* PlayerView.m */,
+				95929900220DC390005A0B2E /* PlayerActionView.h */,
+				95929901220DC390005A0B2E /* PlayerActionView.m */,
+				959298FC220C6CF6005A0B2E /* MP4PlayerViewController.h */,
+				959298FD220C6CF6005A0B2E /* MP4PlayerViewController.m */,
+				959141BF2211C67A00B456C9 /* PreLoadWebView.h */,
+				959141C02211C67A00B456C9 /* PreLoadWebView.m */,
+				959141C22215388000B456C9 /* HomeViewController.h */,
+				959141C32215388000B456C9 /* HomeViewController.m */,
+				959141C92215ADE700B456C9 /* HomeCollectionViewCell.h */,
+				959141CA2215ADE700B456C9 /* HomeCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		959298F7220C6ADC005A0B2E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				959298F8220C6AF0005A0B2E /* VideoPresenter.h */,
+				959298F9220C6AF0005A0B2E /* VideoPresenter.m */,
+				959298FB220C6AFD005A0B2E /* VideoPresenterProtocol.h */,
+				959298FF220C6EEB005A0B2E /* VideoPlayerVCProtocol.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		95929905220DC87E005A0B2E /* webView */ = {
+			isa = PBXGroup;
+			children = (
+				95929906220DC8A1005A0B2E /* WebViewController.h */,
+				95929907220DC8A1005A0B2E /* WebViewController.m */,
+				959141BC221002EC00B456C9 /* WebActionView.h */,
+				959141BD221002EC00B456C9 /* WebActionView.m */,
+			);
+			path = webView;
+			sourceTree = "<group>";
+		};
+		E777737244BF57DEA58F65BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95914195220E6EE500B456C9 /* WebKit.framework */,
+				CB9EE3AE5E075A798E535DC7 /* libPods-VIPVideo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC04CA5013E9F6E2699AA6F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3353E22B343B234F558980AF /* Pods-VIPVideo.debug.xcconfig */,
+				629B3D055031A231ABFD6058 /* Pods-VIPVideo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		959298D2220B1F83005A0B2E /* VIPVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 959298E9220B1F84005A0B2E /* Build configuration list for PBXNativeTarget "VIPVideo" */;
+			buildPhases = (
+				9CACC92D0D1AEDB9D5F0D9B5 /* [CP] Check Pods Manifest.lock */,
+				959298CF220B1F83005A0B2E /* Sources */,
+				959298D0220B1F83005A0B2E /* Frameworks */,
+				959298D1220B1F83005A0B2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VIPVideo;
+			productName = VIPVideo;
+			productReference = 959298D3220B1F83005A0B2E /* VIPVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		959298CB220B1F83005A0B2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = li.haihong.com;
+				TargetAttributes = {
+					959298D2220B1F83005A0B2E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 959298CE220B1F83005A0B2E /* Build configuration list for PBXProject "VIPVideo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 959298CA220B1F83005A0B2E;
+			productRefGroup = 959298D4220B1F83005A0B2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				959298D2220B1F83005A0B2E /* VIPVideo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		959298D1220B1F83005A0B2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95929904220DC571005A0B2E /* PlayerImages.xcassets in Resources */,
+				959298E3220B1F84005A0B2E /* LaunchScreen.storyboard in Resources */,
+				959298E0220B1F84005A0B2E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9CACC92D0D1AEDB9D5F0D9B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VIPVideo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		959298CF220B1F83005A0B2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				959141CE2215BDE200B456C9 /* ServerManager.m in Sources */,
+				959141C82215A3E100B456C9 /* VideoModel.m in Sources */,
+				959298FE220C6CF6005A0B2E /* MP4PlayerViewController.m in Sources */,
+				959298DB220B1F83005A0B2E /* ViewController.m in Sources */,
+				959298E6220B1F84005A0B2E /* main.m in Sources */,
+				95929902220DC390005A0B2E /* PlayerActionView.m in Sources */,
+				95929908220DC8A1005A0B2E /* WebViewController.m in Sources */,
+				959298FA220C6AF0005A0B2E /* VideoPresenter.m in Sources */,
+				959141C12211C67A00B456C9 /* PreLoadWebView.m in Sources */,
+				959298F0220B1FDA005A0B2E /* VideoInteractor.m in Sources */,
+				959141BE221002EC00B456C9 /* WebActionView.m in Sources */,
+				959298D8220B1F83005A0B2E /* AppDelegate.m in Sources */,
+				959141CB2215ADE700B456C9 /* HomeCollectionViewCell.m in Sources */,
+				959298F6220C6A92005A0B2E /* PlayerView.m in Sources */,
+				959141C42215388000B456C9 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		959298E1220B1F84005A0B2E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				959298E2220B1F84005A0B2E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		959298E7220B1F84005A0B2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		959298E8220B1F84005A0B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		959298EA220B1F84005A0B2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3353E22B343B234F558980AF /* Pods-VIPVideo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9GZXLFK2X;
+				INFOPLIST_FILE = "$(SRCROOT)/VIPVideo/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lavion.soyoungapp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		959298EB220B1F84005A0B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 629B3D055031A231ABFD6058 /* Pods-VIPVideo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9GZXLFK2X;
+				INFOPLIST_FILE = "$(SRCROOT)/VIPVideo/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lavion.soyoungapp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		959298CE220B1F83005A0B2E /* Build configuration list for PBXProject "VIPVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				959298E7220B1F84005A0B2E /* Debug */,
+				959298E8220B1F84005A0B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		959298E9220B1F84005A0B2E /* Build configuration list for PBXNativeTarget "VIPVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				959298EA220B1F84005A0B2E /* Debug */,
+				959298EB220B1F84005A0B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 959298CB220B1F83005A0B2E /* Project object */;
+}
