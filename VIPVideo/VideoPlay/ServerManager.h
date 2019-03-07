@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)sharedInstance;
 
+@property (nonatomic ,copy) NSArray *serverlist;
+
 @property (nonatomic,strong)NSString *currentServer;
 
 - (void)changeServer;

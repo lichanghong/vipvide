@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface WebViewController : UIViewController
 @property (nonatomic,strong) WKWebView *webView;
 @property (nonatomic,assign) BOOL founded;
-
+ 
 - (void)webViewLoadURL:(NSString *)urlstr;
 - (void)webViewLoadHTML:(NSString *)html;
 - (void)webViewLoadURL:(NSString *)urlstr completion:(void(^)(NSString *))completion;

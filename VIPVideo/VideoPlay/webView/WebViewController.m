@@ -13,6 +13,7 @@
 #import "ServerManager.h"
 
 @interface WebViewController ()<WKNavigationDelegate,WKUIDelegate>
+@property (nonatomic ,strong) NSString *currentLoadURL;
 @property (nonatomic ,strong) MBProgressHUD *progressHUD;
 @property (nonatomic ,strong) WebActionView *actionContentView;
 @property (nonatomic,copy) void(^completion)(NSString *html);
@@ -44,9 +45,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 300, 50)];
+    [btn setTitle:@"不能播放？点击切换频道" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(changeSignal:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:btn];
+    self.navigationItem.rightBarButtonItem = item;
     // Do any additional setup after loading the view.
 }
-
+- (void)changeSignal:(id)sender
+{
+    [[ServerManager sharedInstance] changeServer];
+    NSString *targetURl = [[self.currentLoadURL componentsSeparatedByString:@"url="] lastObject];
+    NSString *prestr = [[[ServerManager sharedInstance].currentServer componentsSeparatedByString:@"url="] firstObject];
+    NSString *resultstr = [[prestr stringByAppendingString:@"url="] stringByAppendingString:targetURl];
+    [self webViewLoadURL:resultstr];
+}
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -56,6 +70,7 @@
 
 - (void)webViewLoadURL:(NSString *)urlstr
 {
+    self.currentLoadURL = urlstr;
     NSURL *url = [NSURL URLWithString:urlstr];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [_webView loadRequest:request];
@@ -67,6 +82,7 @@
 }
 - (void)webViewLoadURL:(NSString *)urlstr completion:(void (^)(NSString * _Nonnull))completion
 {
+    self.currentLoadURL = urlstr;
     [self webViewLoadURL:urlstr];
     self.completion = completion;
 }
@@ -122,6 +138,7 @@
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
     NSString * urlStr = navigationResponse.response.URL.absoluteString;
     NSLog(@"当前跳转地址-：%@",urlStr);
+    [self.progressHUD hideAnimated:YES afterDelay:1];
     //允许跳转
        decisionHandler(WKNavigationResponsePolicyAllow);
 }
