@@ -8,4 +8,8 @@
 
 希望对大家有些借鉴意义，更希望您看到了之后还能给个小星星鼓励！哈哈
 
+![avatar](https://github.com/lichanghong/vipvide/blob/master/4950F61771D506A857D106F2173A58A9.png)
+![avatar](https://github.com/lichanghong/vipvide/blob/master/964AA412D66DEC2686148B5879BDAA04.jpg)
+![avatar](https://github.com/lichanghong/vipvide/blob/master/C19F87FA4C95CACB0707EC9220380F58.jpg)
+
 
